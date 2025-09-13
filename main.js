@@ -13,7 +13,7 @@ new p5((s) => {
     s.clear(); // transparent background each frame
 
     let gridSize = 20; // resolution of blobs
-    t += 0.005; // animation speed
+    t += 0.008; // animation speed
 
     for (let x = 0; x < s.width; x += gridSize) {
       for (let y = 0; y < s.height; y += gridSize) {

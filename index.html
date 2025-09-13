@@ -4,10 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <title>Tim Jones</title>
-    <script src="./tailwind.min.js"></script>
-    <script src="./p5.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script src="/tailwind.min.js"></script>
+    <script src="/p5.min.js"></script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tim Jones – Engineer, Dad & Dog Owner">
+    <meta property="og:description"
+        content="Always building something. Exploring low-level systems, blending art and technology, keeping up with new ideas and tools in tech.">
+    <meta property="og:url" content="https://timmoth.com/">
+    <meta property="og:image" content="https://timmoth.com/profile.jpeg">
+    <meta property="og:site_name" content="Tim Jones">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tim Jones – Engineer, Dad & Dog Owner">
+    <meta name="twitter:description"
+        content="Always building something. Exploring low-level systems, blending art and technology, keeping up with new ideas and tools in tech.">
+    <meta name="twitter:image" content="https://timmoth.com/profile.jpeg">
+    <meta name="twitter:site" content="@Timmoth_j">
+    <meta name="twitter:creator" content="@Timmoth_j">
+
+    <!-- Optional -->
+    <link rel="canonical" href="https://timmoth.com/">
+
     <style>
         body {
             font-family: "Consolas", "Menlo", "Monaco", monospace;
@@ -22,9 +44,11 @@
         }
 
     </style>
+
 </head>
 
-<body class="min-h-screen p-6 flex flex-col items-center justify-center text-gray-100 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+<body
+    class="min-h-screen p-6 flex flex-col items-center justify-center text-gray-100 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
 
     <!--
    ________________________________________
@@ -41,10 +65,26 @@
                   ||     ||
 -->
 
-    <!-- Profile Picture -->
-    <div class="w-32 h-32 rounded-full border-2 border-white-700 mb-6 overflow-hidden"> <img src="./profile.jpeg"
-            alt="Tim Jones" class="w-full h-full object-cover transform scale-150"> </div>
+<div class="absolute inset-0 pointer-events-none"
+     style="
+       background-image: url('/sparkles.gif');
+       background-size: 768px auto; /* keeps original width, auto height */
+       background-repeat: repeat;
+       mix-blend-mode: screen;
+       opacity: 0.05;
+       z-index: 50;
+     ">
+</div>
 
+</body>
+
+    <!-- Profile Picture -->
+<div class="w-32 h-32 rounded-full border-2 border-white-700 mb-6 overflow-hidden relative">
+  <img src="/profile.jpeg" alt="Tim Jones" class="w-full h-full object-cover transform scale-150">
+  
+</div>
+
+    
     <!-- Name & Description -->
     <h1 class="text-3xl font-bold mb-2">Tim Jones</h1>
     <p class="text-gray-400 mb-6 text-center">Engineer, Dad & Dog Owner</p>
@@ -89,9 +129,11 @@
         <span>-</span>
         <a href="https://art.timmoth.com" target="_blank" class="hover:underline">art</a>
         <span>-</span>
+        <a href="https://ai.timmoth.com" target="_blank" class="hover:underline">ai</a>
+        <span>-</span>
         <a href="https://hello.timmoth.com" target="_blank" class="hover:underline">resume</a>
     </div>
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
