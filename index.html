@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tim Jones</title>
+    <title>Tim Jones – Engineer, Dad & Dog Owner</title>
+    <meta name="description"
+        content="Senior Software Engineer & Tech Lead in Manchester, UK. 14+ years building .NET distributed systems, cloud platforms, generative art, and open-source tools (1.6k+ GitHub stars).">
+    <meta name="author" content="Tim Jones">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111827">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <script src="/tailwind.min.js"></script>
-    <script src="/p5.min.js"></script>
+    <link rel="preload" as="image" href="/profile.webp" type="image/webp" fetchpriority="high">
+    <link rel="stylesheet" href="/tailwind.css">
+    <script src="/p5.min.js" defer></script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -17,6 +23,7 @@
     <meta property="og:url" content="https://timmoth.com/">
     <meta property="og:image" content="https://timmoth.com/profile.jpeg">
     <meta property="og:site_name" content="Tim Jones">
+    <meta property="og:locale" content="en_GB">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -29,6 +36,54 @@
 
     <!-- Optional -->
     <link rel="canonical" href="https://timmoth.com/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tim Jones",
+      "alternateName": "Timmoth",
+      "url": "https://timmoth.com/",
+      "image": "https://timmoth.com/profile.jpeg",
+      "jobTitle": "Senior Software Engineer & Tech Lead",
+      "description": "Senior software engineer with 14+ years across startups, research, and enterprise. Builds .NET distributed systems, cloud platforms, generative art, and open-source developer tools.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Manchester",
+        "addressCountry": "GB"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Aqovia"
+      },
+      "knowsAbout": [
+        ".NET",
+        "C#",
+        "Rust",
+        "TypeScript",
+        "Python",
+        "C++",
+        "Azure",
+        "AWS",
+        "Distributed Systems",
+        "Cloud Infrastructure",
+        "Performance Optimization",
+        "Open Source Software",
+        "Generative Art",
+        "Chess Engines",
+        "Machine Learning"
+      ],
+      "sameAs": [
+        "https://github.com/Timmoth",
+        "https://twitter.com/Timmoth_j",
+        "https://www.linkedin.com/in/timmoth/",
+        "https://projects.timmoth.com",
+        "https://art.timmoth.com",
+        "https://ai.timmoth.com",
+        "https://hello.timmoth.com"
+      ]
+    }
+    </script>
 
     <style>
         body {
@@ -65,7 +120,7 @@
                   ||     ||
 -->
 
-<div class="absolute inset-0 pointer-events-none"
+<div class="absolute inset-0 pointer-events-none" aria-hidden="true"
      style="
        background-image: url('/sparkles.gif');
        background-size: 768px auto; /* keeps original width, auto height */
@@ -76,22 +131,27 @@
      ">
 </div>
 
-</body>
+<main class="flex flex-col items-center">
 
     <!-- Profile Picture -->
 <div class="w-32 h-32 rounded-full border-2 border-white-700 mb-6 overflow-hidden relative">
-  <img src="/profile.jpeg" alt="Tim Jones" class="w-full h-full object-cover transform scale-150">
-  
+  <picture>
+    <source srcset="/profile.webp" type="image/webp">
+    <img src="/profile.jpeg" alt="Tim Jones profile photo"
+         width="460" height="460"
+         fetchpriority="high"
+         class="w-full h-full object-cover transform scale-150">
+  </picture>
 </div>
 
-    
+
     <!-- Name & Description -->
     <h1 class="text-3xl font-bold mb-2">Tim Jones</h1>
     <p class="text-gray-400 mb-6 text-center">Engineer, Dad & Dog Owner</p>
 
     <!-- Links -->
-    <div class="flex flex-wrap justify-center gap-4 mb-6">
-        <a href="https://github.com/Timmoth" target="_blank" aria-label="Github" class="icon">
+    <nav class="flex flex-wrap justify-center gap-4 mb-6" aria-label="Social profiles">
+        <a href="https://github.com/Timmoth" target="_blank" rel="me noopener" aria-label="Github" class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255);" width="32" height="32"
                 viewBox="0 0 32 32">
                 <path
@@ -99,7 +159,7 @@
                 </path>
             </svg>
         </a>
-        <a href="https://twitter.com/Timmoth_j" target="_blank" aria-label="Twitter" class="icon">
+        <a href="https://twitter.com/Timmoth_j" target="_blank" rel="me noopener" aria-label="Twitter" class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255);" width="32" height="32"
                 viewBox="0 0 32 32">
                 <path
@@ -107,7 +167,7 @@
                 </path>
             </svg>
         </a>
-        <a href="https://www.linkedin.com/in/timmoth/" target="_blank" aria-label="LinkedIn" class="icon">
+        <a href="https://www.linkedin.com/in/timmoth/" target="_blank" rel="me noopener" aria-label="LinkedIn" class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(255, 255, 255);" width="32" height="32"
                 viewBox="0 0 32 32">
                 <path
@@ -115,7 +175,7 @@
                     fill-rule="evenodd"></path>
             </svg>
         </a>
-    </div>
+    </nav>
 
     <!-- Short Bio -->
     <p class="text-center max-w-md text-gray-400 mb-6">
@@ -124,16 +184,19 @@
     </p>
 
 
-    <div class="flex flex-wrap justify-center gap-4 text-gray-200">
-        <a href="https://projects.timmoth.com" target="_blank" class="hover:underline">projects</a>
-        <span>-</span>
-        <a href="https://art.timmoth.com" target="_blank" class="hover:underline">art</a>
-        <span>-</span>
-        <a href="https://ai.timmoth.com" target="_blank" class="hover:underline">ai</a>
-        <span>-</span>
-        <a href="https://hello.timmoth.com" target="_blank" class="hover:underline">resume</a>
-    </div>
-    <script src="main.js"></script>
+    <nav class="flex flex-wrap justify-center gap-4 text-gray-200" aria-label="Sites">
+        <a href="https://projects.timmoth.com" target="_blank" rel="me noopener" class="hover:underline">projects</a>
+        <span aria-hidden="true">-</span>
+        <a href="https://art.timmoth.com" target="_blank" rel="me noopener" class="hover:underline">art</a>
+        <span aria-hidden="true">-</span>
+        <a href="https://ai.timmoth.com" target="_blank" rel="me noopener" class="hover:underline">ai</a>
+        <span aria-hidden="true">-</span>
+        <a href="https://hello.timmoth.com" target="_blank" rel="me noopener" class="hover:underline">resume</a>
+    </nav>
+
+</main>
+
+<script src="/main.js" defer></script>
 
 </body>
 

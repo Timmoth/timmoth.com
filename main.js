@@ -7,18 +7,22 @@ new p5((s) => {
     canvas.style("z-index", "-1"); // behind content
     s.noStroke();
     s.colorMode(s.HSB, 360, 100, 100, 255);
+    s.frameRate(30);
   };
 
   s.draw = () => {
     s.clear(); // transparent background each frame
 
     let gridSize = 20; // resolution of blobs
-    t += 0.008; // animation speed
+    t += 0.016; // animation speed (doubled to compensate for halved framerate)
 
     for (let x = 0; x < s.width; x += gridSize) {
       for (let y = 0; y < s.height; y += gridSize) {
         let n = s.noise(x * 0.002, y * 0.002, t);
-        let hue = 200 + 160 * n; // shifting between blue → purple → green
+        // Integer hue keeps p5's color cache bounded — float hues
+        // accumulate millions of unique cache entries and eventually
+        // crash with "Too many properties to enumerate".
+        let hue = (200 + 160 * n) | 0;
         let alpha = 25; // subtle transparency
 
         s.fill(hue % 360, 80, 100, alpha);
