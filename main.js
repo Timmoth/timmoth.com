@@ -4,6 +4,7 @@ new p5((s) => {
   s.setup = () => {
     const canvas = s.createCanvas(window.innerWidth, window.innerHeight);
     canvas.position(0, 0);
+    canvas.style("position", "fixed");
     canvas.style("z-index", "-1"); // behind content
     s.noStroke();
     s.colorMode(s.HSB, 360, 100, 100, 255);

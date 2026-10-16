@@ -123,6 +123,26 @@
             text-decoration: underline;
         }
 
+        .writing details {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0.5rem;
+            width: min(100%, 42rem);
+        }
+
+        .writing summary {
+            align-self: center;
+            color: #9ca3af;
+            font-size: 0.875rem;
+            cursor: pointer;
+        }
+
+        .writing details a {
+            width: 100%;
+            text-align: left;
+        }
+
         .writing .date {
             color: #4b5563;
         }
@@ -149,8 +169,9 @@
                   ||     ||
 -->
 
-<div class="absolute inset-0 pointer-events-none" aria-hidden="true"
+<div class="inset-0 pointer-events-none" aria-hidden="true"
      style="
+       position: fixed;
        background-image: url('/sparkles.gif');
        background-size: 768px auto; /* keeps original width, auto height */
        background-repeat: repeat;
@@ -214,19 +235,46 @@
 
 
     <nav class="flex flex-wrap justify-center gap-4 text-gray-200" aria-label="Sites">
-        <a href="https://projects.timmoth.com" target="_blank" rel="me noopener" class="hover:underline">projects</a>
-        <span aria-hidden="true">-</span>
-        <a href="https://art.timmoth.com" target="_blank" rel="me noopener" class="hover:underline">art</a>
-        <span aria-hidden="true">-</span>
-        <a href="https://ai.timmoth.com" target="_blank" rel="me noopener" class="hover:underline">ai</a>
-        <span aria-hidden="true">-</span>
         <a href="https://hello.timmoth.com" target="_blank" rel="me noopener" class="hover:underline">resume</a>
     </nav>
 
-    <!-- Writing -->
-    <section class="writing" aria-label="Writing">
-        <h2>Writing</h2>
-        <a href="/cycle-tour-oct-26/">263 km down the Adriatic <span class="date">· Oct 2026</span></a>
+    <!-- Links -->
+    <section class="writing" aria-label="Links">
+        <h2>Links</h2>
+        <a href="/cycle-tour-oct-26/">A 263 km cycle tour down the Adriatic coast. <span class="date">· Oct 2026</span></a>
+        <a href="/sapling/play/">Play chess against the Sapling engine in your browser. <span class="date">· Oct 2026</span></a>
+        <a href="https://github.com/Timmoth/RackPeek" target="_blank" rel="noopener">Map, track, and visualize your entire home lab from a single dashboard. <span class="date">· Feb 2026</span></a>
+        <a href="https://cloudrecroom.com" target="_blank" rel="noopener">Online multiplayer party games and ice-breakers. <span class="date">· Sep 2023</span></a>
+        <a href="https://github.com/Timmoth/Sapling" target="_blank" rel="noopener">A 3400+ ELO chess engine in C# with neural networks. <span class="date">· Apr 2025</span></a>
+        <a href="https://emuchip.com" target="_blank" rel="noopener">Run classic CHIP-8 games in your browser with Blazor. <span class="date">· Aug 2025</span></a>
+        <details>
+            <summary>More projects</summary>
+            <a href="https://art.timmoth.com/" target="_blank" rel="noopener">Blending art and coding. <span class="date">· Oct 2026</span></a>
+            <a href="https://ai.timmoth.com" target="_blank" rel="noopener">Try browser-based AI experiments and machine learning demos. <span class="date">· Oct 2026</span></a>
+            <a href="https://ai-learn.timmoth.com/" target="_blank" rel="noopener">AI-written courses with audio narration — a static learn-anything site. <span class="date">· May 2026</span></a>
+            <a href="https://right-to-complain.co.uk/" target="_blank" rel="noopener">Score your right to moan about the UK weather, by postcode. <span class="date">· May 2026</span></a>
+            <a href="https://uk.solarwhen.com/" target="_blank" rel="noopener">Hourly solar forecasts for any UK postcode, free and keyless. <span class="date">· May 2026</span></a>
+            <a href="https://chromewebstore.google.com/detail/page-squeeze/abjniaameijmdigllhhpbfbppfnklhjj" target="_blank" rel="noopener">One-click Markdown export for any webpage. <span class="date">· Apr 2026</span></a>
+            <a href="https://termfull.com" target="_blank" rel="noopener">A creative thesaurus for naming projects — fully precomputed, no backend. <span class="date">· Apr 2026</span></a>
+            <a href="https://github.com/Timmoth/Fortitude" target="_blank" rel="noopener">Fluently mock any HTTP endpoint for bulletproof .NET tests. <span class="date">· Dec 2025</span></a>
+            <a href="https://pitchlearn.com" target="_blank" rel="noopener">Learn piano with real-time MIDI feedback and interactive lessons. <span class="date">· Oct 2025</span></a>
+            <a href="https://wikiweave.com/" target="_blank" rel="noopener">AI-powered wiki that weaves knowledge into a connected entity graph. <span class="date">· Aug 2025</span></a>
+            <a href="https://64board.com/" target="_blank" rel="noopener">An 8×8 message board owned entirely by its users, powered by blockchain. <span class="date">· Jul 2025</span></a>
+            <a href="https://github.com/Timmoth/DsaDotnet" target="_blank" rel="noopener">Battle-tested algorithms and data structures for .NET. <span class="date">· Jun 2024</span></a>
+            <a href="https://art.timmoth.com" target="_blank" rel="noopener">Interactive generative art powered by code and shaders. <span class="date">· Sep 2025</span></a>
+            <a href="https://calendarpod.com" target="_blank" rel="noopener">Smart scheduling that eliminates the back-and-forth. <span class="date">· Feb 2025</span></a>
+            <a href="https://rompisland.com" target="_blank" rel="noopener">A living art installation meets massive multiplayer world. <span class="date">· Oct 2023</span></a>
+            <a href="https://tinytoolcrate.com" target="_blank" rel="noopener">A Swiss Army knife of micro-tools for developers. <span class="date">· Jan 2025</span></a>
+            <a href="https://techfolk.dev" target="_blank" rel="noopener">The social graph of influential voices in tech. <span class="date">· Sep 2023</span></a>
+            <a href="https://github.com/Timmoth/RustyRatracerr" target="_blank" rel="noopener">Blazing-fast distributed ray tracer built in Rust. <span class="date">· Jul 2023</span></a>
+            <a href="https://github.com/Timmoth/AsyncMonolith" target="_blank" rel="noopener">Ship async workflows without adding a message broker. <span class="date">· Jul 2025</span></a>
+            <a href="https://github.com/Timmoth/aid-cli" target="_blank" rel="noopener">A Rust-built Swiss Army knife for developers. <span class="date">· Nov 2024</span></a>
+            <a href="https://github.com/Timmoth/vcortex" target="_blank" rel="noopener">GPU-accelerated neural network training for .NET. <span class="date">· Nov 2024</span></a>
+            <a href="https://grandchesstree.com" target="_blank" rel="noopener">Mapping every possible chess position across distributed compute nodes. <span class="date">· Mar 2025</span></a>
+            <a href="https://dexter.timmoth.com" target="_blank" rel="noopener">AI-powered homepage celebrating the world's best boy. <span class="date">· Apr 2026</span></a>
+            <a href="https://github.com/Timmoth/DocMigrator" target="_blank" rel="noopener">Migrate NoSQL schemas seamlessly with zero downtime. <span class="date">· Feb 2026</span></a>
+            <a href="https://github.com/Timmoth/Text2Math" target="_blank" rel="noopener">Lightning-fast math expression parsing and evaluation. <span class="date">· Jul 2024</span></a>
+        </details>
     </section>
 
 </main>
