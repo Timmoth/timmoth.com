@@ -1,0 +1,497 @@
+[
+    {
+        "name": "Art",
+        "description": "Blending art and coding.",
+        "description_short": "Blending art and coding.",
+        "description_long": "A collection of creative coding projects and visual experiments, combining software with digital art.",
+        "created_at": 1792182533,
+        "modified_at": 1792182533,
+        "url": "https://github.com/Timmoth/Art",
+        "tags": [
+            "csharp",
+            "javascript",
+            "glsl",
+            "creative-coding",
+            "art"
+        ]
+    },
+    {
+        "name": "Ai",
+        "description": "A collection of browser-based machine learning experiments.",
+        "description_short": "Try browser-based AI experiments and machine learning demos.",
+        "description_long": "A collection of browser-based machine learning experiments, including handwritten digit recognition, doodle recognition across 380+ categories, and a Snake agent trained with deep Q-learning. Explore the live demos at ai.timmoth.com.",
+        "created_at": 1792182533,
+        "modified_at": 1792182533,
+        "url": "https://github.com/Timmoth/Ai",
+        "tags": [
+            "ai",
+            "machine-learning",
+            "python",
+            "tensorflow",
+            "javascript",
+            "web"
+        ]
+    },
+    {
+        "name": "Play Sapling",
+        "description": "Play chess against Sapling, an open-source .NET chess engine running in your browser.",
+        "description_short": "Play chess against the Sapling engine in your browser.",
+        "description_long": "A browser-based chess interface for playing against Sapling, an open-source .NET chess engine compiled to WebAssembly. Includes adjustable thinking time, live search statistics, and FEN/PGN export.",
+        "created_at": 1792182533,
+        "modified_at": 1792182533,
+        "url": "https://timmoth.com/sapling/play/",
+        "tags": [
+            "chess",
+            "chess-engine",
+            "game",
+            "webassembly",
+            "dotnet"
+        ]
+    },
+    {
+        "name": "Cycle tour Oct 26",
+        "description": "A 263 km cycle tour down the Adriatic.",
+        "description_short": "A 263 km cycle tour down the Adriatic coast.",
+        "description_long": "A cycle tour story following a 263 km route down the Adriatic, through Croatia, Montenegro, and Albania.",
+        "created_at": 1792182533,
+        "modified_at": 1792182533,
+        "url": "https://timmoth.com/cycle-tour-oct-26/",
+        "tags": [
+            "cycling",
+            "cycle-touring",
+            "travel",
+            "adriatic"
+        ]
+    },
+    {
+        "name": "ai-learn",
+        "description": "AI-generated lessons with audio narration, published as a static site.",
+        "description_short": "AI-written courses with audio narration — a static learn-anything site.",
+        "description_long": "An automated learning platform that uses Claude Code to research and write lessons from scratch, then renders accompanying audio narration via a self-hosted Kokoro-FastAPI text-to-speech server. A Python CLI orchestrates lesson generation, audio rendering, and grouping into ordered courses, with a customisable TTS phonetic dictionary for cleaner narration. The whole thing builds into a static site (Tailwind via CDN, HTML5 audio) and publishes through GitHub Actions to GitHub Pages.",
+        "created_at": 1779019200,
+        "modified_at": 1779019200,
+        "url": "https://ai-learn.timmoth.com/",
+        "tags": [
+            "python",
+            "ai",
+            "tts",
+            "static-site",
+            "education",
+            "automation"
+        ]
+    },
+    {
+        "name": "Right to Complain",
+        "description": "A UK weather grievance calculator — have you actually earned the right to moan?",
+        "description_short": "Score your right to moan about the UK weather, by postcode.",
+        "description_long": "Enter a UK city or postcode and get a 0–100 score for how much right you actually have to complain about your local weather, with a comparison against the UK average and head-to-head city duels. A playful static web app backed by real climate data and a custom rain-canvas backdrop.",
+        "created_at": 1778680800,
+        "modified_at": 1778680800,
+        "url": "https://right-to-complain.co.uk/",
+        "tags": [
+            "weather",
+            "uk",
+            "javascript",
+            "tailwind",
+            "web",
+            "fun"
+        ]
+    },
+    {
+        "name": "SolarWhen",
+        "description": "Free UK solar generation forecast API — no signup, no key.",
+        "description_short": "Hourly solar forecasts for any UK postcode, free and keyless.",
+        "description_long": "A free UK solar forecast API that reconstructs irradiance from MET Norway weather data using solar physics models (Spencer, Haurwitz, Kasten-Czeplak, isotropic transposition). Returns hourly generation predictions for any postcode in JSON or embeddable SVG, supports panel direction and tilt, and integrates Octopus Agile pricing for battery charging recommendations. Home Assistant friendly with convenience endpoints for automation.",
+        "created_at": 1778253600,
+        "modified_at": 1778253600,
+        "url": "https://uk.solarwhen.com/",
+        "tags": [
+            "solar",
+            "energy",
+            "forecast",
+            "api",
+            "weather",
+            "home-assistant",
+            "renewable"
+        ]
+    },
+    {
+        "name": "page-squeeze",
+        "description": "Chrome extension that turns webpages into clean Markdown.",
+        "description_short": "One-click Markdown export for any webpage.",
+        "description_long": "A Chrome extension that converts webpages into well-formatted Markdown files, with toggles for title, metadata, content and links. Output is auto-named from the page hostname and path — handy for archiving articles or piping pages into an LLM.",
+        "created_at": 1776628282,
+        "modified_at": 1776805949,
+        "url": "https://chromewebstore.google.com/detail/page-squeeze/abjniaameijmdigllhhpbfbppfnklhjj",
+        "tags": [
+            "javascript",
+            "chrome-extension",
+            "markdown",
+            "browser",
+            "productivity"
+        ]
+    },
+    {
+        "name": "termfull",
+        "description": "A living semantic word explorer — a creative thesaurus for naming things.",
+        "description_short": "A creative thesaurus for naming projects — fully precomputed, no backend.",
+        "description_long": "A creative naming assistant built around the 90,000 most-used English words, each precomputed with up to 20 related alternatives ranked by semantic similarity, word frequency, and spelling variance. The whole dataset is served statically and explored client-side, so suggestions surface instantly with no backend round-trips.",
+        "created_at": 1776195656,
+        "modified_at": 1776323527,
+        "url": "https://termfull.com",
+        "tags": [
+            "python",
+            "nlp",
+            "semantic-search",
+            "thesaurus",
+            "static-site",
+            "naming"
+        ]
+    },
+    {
+        "name": "RackPeek",
+        "description": "CLI & web tool for documenting home lab infrastructure.",
+        "description_short": "Map, track, and visualize your entire home lab from a single dashboard.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1771098015,
+        "modified_at": 1771098015,
+        "url": "https://github.com/Timmoth/RackPeek",
+        "tags": [
+            "csharp",
+            "dotnet",
+            "homelab",
+            "docker",
+            "CLI",
+            "infra",
+            "infrastructure"
+        ]
+    },
+    {
+        "name": "Fortitude",
+        "description": "Fluent mock HTTP server for advanced .NET testing.",
+        "description_short": "Fluently mock any HTTP endpoint for bulletproof .NET tests.",
+        "description_long": "A lightweight, middleware-powered fake server that lets you fluently configure HTTP routes, responses, and test scenarios directly from your .NET tests. Perfect for functional and behavioral testing when external APIs are unavailable, expensive, or difficult to run locally. Supports external server mode, in-memory interception, and YAML-defined handlers.",
+        "created_at": 1765134636,
+        "modified_at": 1765134636,
+        "url": "https://github.com/Timmoth/Fortitude",
+        "tags": [
+            "csharp",
+            "dotnet",
+            "testing",
+            "mock",
+            "http",
+            "docker"
+        ]
+    },
+    {
+        "name": "Pitch Learn",
+        "description": "Interactive MIDI Piano Tutor.",
+        "description_short": "Learn piano with real-time MIDI feedback and interactive lessons.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1759860572,
+        "modified_at": 1759860572,
+        "url": "https://pitchlearn.com",
+        "tags": [
+            "javascript",
+            "tailwind"
+        ]
+    },
+    {
+        "name": "Wikiweave",
+        "description": "AI Generated structured wiki where knowledge is organized as a network of entities.",
+        "description_short": "AI-powered wiki that weaves knowledge into a connected entity graph.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1754331303,
+        "modified_at": 1754331303,
+        "url": "https://wikiweave.com/",
+        "tags": [
+            "python",
+            "ai"
+        ]
+    },
+    {
+        "name": "64 board",
+        "description": "A decentralized 8×8 message board.",
+        "description_short": "An 8×8 message board owned entirely by its users, powered by blockchain.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1751652903,
+        "modified_at": 1751652903,
+        "url": "https://64board.com/",
+        "tags": [
+            "solidity",
+            "blockchain"
+        ]
+    },
+    {
+        "name": "DsaDotnet",
+        "description": "Optimized algorithms and data structures library for .NET.",
+        "description_short": "Battle-tested algorithms and data structures for .NET.",
+        "description_long": "A collaborative, beginner-friendly collection of optimized algorithms and data structures implemented in C#. Features include binary trees, weighted graphs, circle/ellipse/polygon geometry, binary/depth-first/breadth-first search, factorial/fibonacci/primes sequences, bubble/insertion/merge/quick sorting, and Knuth-Morris-Pratt/Levenshtein distance text algorithms.",
+        "created_at": 1717690582,
+        "modified_at": 1717690582,
+        "url": "https://github.com/Timmoth/DsaDotnet",
+        "tags": [
+            "csharp",
+            "dotnet",
+            "algorithms",
+            "data-structures",
+            "computer-science",
+            "library"
+        ]
+    },
+    {
+        "name": "Code Art",
+        "description": "Various interactive projects blending code and art.",
+        "description_short": "Interactive generative art powered by code and shaders.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1757153886,
+        "modified_at": 1757153886,
+        "url": "https://art.timmoth.com",
+        "tags": [
+            "webgl",
+            "javascript",
+            "shader",
+            "visualization",
+            "math",
+            "interactive",
+            "dotnet"
+        ]
+    },
+    {
+        "name": "calendarpod",
+        "description": "Intuitive collaborative scheduling and resource management.",
+        "description_short": "Smart scheduling that eliminates the back-and-forth.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1739110332,
+        "modified_at": 1739110332,
+        "url": "https://calendarpod.com",
+        "tags": [
+            "blazor",
+            "dotnet",
+            "signalr"
+        ]
+    },
+    {
+        "name": "Romp Island",
+        "description": "65% art project 35% MMORPG.",
+        "description_short": "A living art installation meets massive multiplayer world.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1696857132,
+        "modified_at": 1696857132,
+        "url": "https://rompisland.com",
+        "tags": [
+            "ts",
+            "threejs",
+            "dotnet",
+            "signalr"
+        ]
+    },
+    {
+        "name": "Tiny Tool Crate",
+        "description": "A collection of tiny developer productivity tools.",
+        "description_short": "A Swiss Army knife of micro-tools for developers.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1736431932,
+        "modified_at": 1736431932,
+        "url": "https://tinytoolcrate.com",
+        "tags": [
+            "ts",
+            "react"
+        ]
+    },
+    {
+        "name": "cloud rec room",
+        "description": "A collection of multiplayer ice-breaker party games.",
+        "description_short": "Online multiplayer party games and ice-breakers.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1694265132,
+        "modified_at": 1694265132,
+        "url": "https://cloudrecroom.com",
+        "tags": [
+            "dotnet",
+            "signalr",
+            "react"
+        ]
+    },
+    {
+        "name": "techfolk",
+        "description": "Discover authoritative and influential individuals in the tech community.",
+        "description_short": "The social graph of influential voices in tech.",
+        "description_long": "A lightweight web UI and CLI tool for discovering, managing, and documenting your IT infrastructure and home lab. Track hardware, services, networks, and their relationships in a clear, scriptable way without enterprise bloat or proprietary lock-in. Uses open, non-proprietary YAML formats for full data ownership.",
+        "created_at": 1694265132,
+        "modified_at": 1694265132,
+        "url": "https://techfolk.dev",
+        "tags": [
+            "js",
+            "ts",
+            "react"
+        ]
+    },
+    {
+        "name": "RustyRatracerr",
+        "description": "High-performance ray tracing experiments in Rust.",
+        "description_short": "Blazing-fast distributed ray tracer built in Rust.",
+        "description_long": "Experimental high-performance computing ray tracer built in Rust. Follows the Ray Tracing In One Weekend guide while exploring HPC clusters with ex-enterprise components. Features SLURM and OpenMPI integration for distributed rendering across multiple compute nodes.",
+        "created_at": 1688649132,
+        "modified_at": 1688649132,
+        "url": "https://github.com/Timmoth/RustyRatracerr",
+        "tags": [
+            "rust",
+            "ray-tracing",
+            "hpc",
+            "parallel-computing",
+            "slurm",
+            "rendering"
+        ]
+    },
+    {
+        "name": "AsyncMonolith",
+        "description": "Durable async messaging using your database as a queue.",
+        "description_short": "Ship async workflows without adding a message broker.",
+        "description_long": "A lightweight library that enables simple, durable, and asynchronous messaging in .NET applications using your existing database. Features include background task offloading, distributed workload execution, scheduled messaging, event-driven architectures, Mediator pattern decoupling, Transactional Outbox pattern, automatic retries, and simplified testability—all without requiring a message broker.",
+        "created_at": 1751807532,
+        "modified_at": 1751807532,
+        "url": "https://github.com/Timmoth/AsyncMonolith",
+        "tags": [
+            "csharp",
+            "dotnet",
+            "messaging",
+            "async",
+            "outbox",
+            "efcore",
+            "scheduler"
+        ]
+    },
+    {
+        "name": "Sapling",
+        "description": "High-performance .NET UCI chess engine rated 3400+ ELO.",
+        "description_short": "A 3400+ ELO chess engine in C# with neural networks.",
+        "description_long": "A strong .NET UCI chess engine leveraging NNUE neural networks, bitboards, and advanced search algorithms including Negamax, Alpha-Beta pruning, Iterative Deepening, and various pruning techniques. Currently rated 3378 ELO at CCRL 40/15, 2890+ at Lichess Bullet. Features Lazy SMP parallel search, Pondering, Cuckoo repetition detection, and hardware intrinsics (Avx2, Bmi1, Bmi2, Popcnt, Sse).",
+        "created_at": 1743944863,
+        "modified_at": 1743944863,
+        "url": "https://github.com/Timmoth/Sapling",
+        "tags": [
+            "csharp",
+            "dotnet",
+            "chess",
+            "chess-engine",
+            "uci",
+            "nnue"
+        ]
+    },
+    {
+        "name": "aid-cli",
+        "description": "Powerful Rust CLI toolkit for developer productivity.",
+        "description_short": "A Rust-built Swiss Army knife for developers.",
+        "description_long": "A comprehensive CLI toolkit featuring HTTP requests, IP scanning, port scanning, CPU/memory/disk/network monitoring, JSON parsing, CSV transformation, text manipulation, file operations, time utilities, bit manipulation, math evaluation, process monitoring, and environment inspection. Built in Rust for blazing-fast performance with easy installation scripts for Linux, Mac (including Apple Silicon), and Windows.",
+        "created_at": 1730902063,
+        "modified_at": 1730902063,
+        "url": "https://github.com/Timmoth/aid-cli",
+        "tags": [
+            "rust",
+            "cli",
+            "tooling",
+            "productivity",
+            "developer-tools",
+            "utilities"
+        ]
+    },
+    {
+        "name": "vcortex",
+        "description": "High-performance CPU/GPU machine learning for .NET.",
+        "description_short": "GPU-accelerated neural network training for .NET.",
+        "description_long": "A lightweight, high-performance machine learning library for .NET designed for neural network training and inference. Features convolutional and dense layers, dropout regularization, softmax outputs, multiple optimizers (Adam, SGD, AdaGrad, RMSProp), learning rate schedulers, and support for both CPU and GPU (CUDA) acceleration. Ideal for image classification, regression, and custom neural network architectures.",
+        "created_at": 1730902063,
+        "modified_at": 1730902063,
+        "url": "https://github.com/Timmoth/vcortex",
+        "tags": [
+            "csharp",
+            "dotnet",
+            "machine-learning",
+            "ai",
+            "neural-network",
+            "gpu",
+            "cuda"
+        ]
+    },
+    {
+        "name": "The Grand Chess Tree",
+        "description": "Distributed perft effort to traverse all chess positions.",
+        "description_short": "Mapping every possible chess position across distributed compute nodes.",
+        "description_long": "A public distributed computing effort to traverse the complete game tree of chess using perft (position enumeration). Currently traversing positions up to depth 11, counting nodes, captures, en passant, castles, promotions, and various check/mate configurations. Built on Sapling's move generator with horizontal mirroring and output buckets for optimized performance across distributed nodes.",
+        "created_at": 1741269978,
+        "modified_at": 1741269978,
+        "url": "https://grandchesstree.com",
+        "tags": [
+            "chess",
+            "dotnet",
+            "distributed",
+            "hpc",
+            "perft",
+            "bitboard"
+        ]
+    },
+    {
+        "name": "Chip-8 Emulator",
+        "description": "Full-featured WebAssembly CHIP-8 emulator in C#.",
+        "description_short": "Run classic CHIP-8 games in your browser with Blazor.",
+        "description_long": "A complete WebAssembly CHIP-8 emulator built with C# and .NET. Features 4K memory space, 16 registers, hardware timers, 64×32 pixel display, and runs entirely in-browser via Blazor WebAssembly. Perfect for playing classic CHIP-8 games like Pong, Space Invaders, and Tetris with authentic hardware behavior and cycle-accurate timing.",
+        "created_at": 1755964812,
+        "modified_at": 1756224012,
+        "url": "https://emuchip.com",
+        "tags": [
+            "emulator",
+            "assembly",
+            "csharp",
+            "dotnet",
+            "wasm",
+            "blazor"
+        ]
+    },
+    {
+        "name": "homepageformydog",
+        "description": "AI-powered homepage celebrating the world's best boy.",
+        "description_short": "AI-powered homepage celebrating the world's best boy.",
+        "description_long": "A personal experiment in leveraging AI tooling for software development, showcasing a vibrant homepage for Dexter the Border Collie. Built using opencode / GEMMA4:26B / RTX 3090, this project blends playful design with cutting-edge AI generation to celebrate the goodest boy in town.",
+        "created_at": 1775682310,
+        "modified_at": 1775682310,
+        "url": "https://dexter.timmoth.com",
+        "tags": [
+            "dotnet",
+            "ai",
+            "web"
+        ]
+    },
+    {
+        "name": "DocMigrator",
+        "description": "Zero-downtime document migrations for NoSQL databases.",
+        "description_short": "Migrate NoSQL schemas seamlessly with zero downtime.",
+        "description_long": "A high-performance C# library enabling on-the-fly document migrations in document databases like MongoDB. Migrate schemas seamlessly as documents are deserialized, eliminating the need for messy backward-compatible code or expensive downtime migrations. Supports both JSON and BSON with zero runtime overhead.",
+        "created_at": 1771918804,
+        "modified_at": 1771918804,
+        "url": "https://github.com/Timmoth/DocMigrator",
+        "tags": [
+            "csharp",
+            "dotnet",
+            "nuget",
+            "mongodb",
+            "database"
+        ]
+    },
+    {
+        "name": "Text2Math",
+        "description": "Lightweight mathematical expression parser and evaluator.",
+        "description_short": "Lightning-fast math expression parsing and evaluation.",
+        "description_long": "A well-tested, extensible C# library for parsing and evaluating mathematical expressions from text. Supports standard arithmetic, trigonometric functions, logarithms, and custom variables. Built with performance in mind using read-only spans for minimal memory allocation, achieving sub-microsecond evaluation times for complex expressions.",
+        "created_at": 1720080036,
+        "modified_at": 1720080036,
+        "url": "https://github.com/Timmoth/Text2Math",
+        "tags": [
+            "csharp",
+            "dotnet",
+            "nuget",
+            "math",
+            "parser"
+        ]
+    }
+]
