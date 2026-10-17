@@ -1,6 +1,4 @@
-/* Sapling webapp — Scribe (Apple-inspired) design system, dark appearance default.
-   Light appearance uses the Scribe light tokens for the optional toggle. The chess
-   board keeps the iBlunder wood palette (content, not chrome). See web/ASSET-MANIFEST.md. */
+/* Sapling web UI styles. */
 
 :root {
   --canvas: #0b0b0f;
@@ -171,8 +169,6 @@ body {
 .piece {
   position: absolute;
   width: 80%; height: 80%; top: 10%; left: 10%;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
   pointer-events: none;
 }
 .coord { position: absolute; font-size: 10px; color: var(--tertiaryText); pointer-events: none; }

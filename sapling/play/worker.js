@@ -1,13 +1,5 @@
-// Sapling browser worker: hosts the .NET/Wasm engine behind [JSExport] bindings and runs
-// search in bounded slices. Between slices the worker awaits a macrotask tick so its event
-// loop can receive stop/new-game messages; a synchronous search would otherwise block them.
-//
-// The host drives a RESUMABLE session (Phase 4.4/4.3): each SearchSlice continues the same
-// iterative-deepening search with all state preserved (transposition table, killers, history,
-// PV, accumulators). A slice stops at a node budget and/or wall-clock deadline, so deep
-// iterations no longer block the event loop and cancellation is honoured within a slice.
-// Resumability is per-iteration (an interrupted iteration is resumed warm, not re-run cold);
-// full intra-node frame serialisation is not implemented. See docs/cross-platform/phase-4-browser.md.
+// Browser worker for the Wasm engine. Sliced searches yield so stop and new-game messages
+// can run; interrupted iterations restart from the root with a warm transposition table.
 
 let host = null;
 const stopFlags = new Set();

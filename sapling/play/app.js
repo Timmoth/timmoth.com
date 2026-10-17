@@ -1,11 +1,8 @@
-// Sapling webapp UI controller. Owns the authoritative UI game view (FEN, legal moves,
-// history) and talks to the engine only through the worker message contract. All chess
-// legality/PGN comes from the engine; this file never re-implements move generation.
+// Web UI controller; chess rules and game history come from the engine.
 
 const INITIAL_FEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
-// iBlunder board style: 42x42 PNG piece set (see web/assets/pieces + ASSET-MANIFEST.md).
 const PIECE_WORD = { p: 'pawn', n: 'knight', b: 'bishop', r: 'rook', q: 'queen', k: 'king' };
-const pieceSrc = (color, type) => `./assets/pieces/${color === 'w' ? 'white' : 'black'}_${PIECE_WORD[type]}.png`;
+const pieceSrc = (color, type) => `./assets/pieces/${color === 'w' ? 'white' : 'black'}_${PIECE_WORD[type]}.svg`;
 
 // Think time -> bounded search budgets. Depth accounts for the engine's inclusive-depth
 // off-by-one (requested N completes N-1). These are starting values pending device tuning.
