@@ -1,6 +1,6 @@
 # Chess piece artwork
 
-The RhosGFX chess pieces are by RhosGFX and are released under CC0 1.0.
+Vector Chess Pieces by RhosGFX. Released under CC0 1.0. Attribution is not required, but appreciated.
 
-- Source: [Lichess RhosGFX piece set](https://github.com/lichess-org/lila/tree/master/public/piece/rhosgfx)
-- License: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Source: https://rhosgfx.itch.io/vector-chess-pieces
+- CC0: https://creativecommons.org/publicdomain/zero/1.0/
