@@ -1,7 +1,7 @@
 export const config = /*json-start*/{
   "mainAssemblyName": "Sapling.WebHost.dll",
   "resources": {
-    "hash": "sha256-zkRkoFHjFbdd65FYJYmPh3qR9l9FmuK5+0XhlbT7NnY=",
+    "hash": "sha256-8fsAb3/7kp/k/qzWJMM3W4zdlZ3/ALPFeLP9Ve5k+rM=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.js"
@@ -15,7 +15,7 @@ export const config = /*json-start*/{
     "wasmNative": [
       {
         "name": "dotnet.native.wasm",
-        "hash": "sha256-4zm2r7IQKFNGDWixJflEF4jcTGK5ezhaP4MWhyYo5s4="
+        "hash": "sha256-m1uHlEDOHu2uX1ZfWL7F7hn+lH5ePLgY7rOOY1w6IdI="
       }
     ],
     "icu": [
@@ -39,27 +39,27 @@ export const config = /*json-start*/{
       {
         "virtualPath": "Sapling.Engine.wasm",
         "name": "Sapling.Engine.wasm",
-        "hash": "sha256-FPvR5UfX+8OKLXlQA+FbVwte0yxFdvq+cdY/i4aXSEY="
+        "hash": "sha256-zM8AApoTlOV0cfrfk+SsOF59ltK1BC5sg+FgY1uePlM="
       },
       {
         "virtualPath": "Sapling.WebHost.wasm",
         "name": "Sapling.WebHost.wasm",
-        "hash": "sha256-8JG1mIP7/8ZEVD+vAByQjs6BHLzV0Xre7y26w7FUrck="
+        "hash": "sha256-im4dOLwU0sHKlCzIJ8C8QSVmRCFK84HggVmW1o1aygk="
       },
       {
         "virtualPath": "System.Linq.wasm",
         "name": "System.Linq.wasm",
-        "hash": "sha256-Y3qmGEgWk/esPcd8pOQR4kCDeq10CztonzYjqYw7RXs="
+        "hash": "sha256-4oUQWdhIDyvsO52bhwT+AOJ5BKZdrPiaofd/ZSANKcs="
       },
       {
         "virtualPath": "System.Private.CoreLib.wasm",
         "name": "System.Private.CoreLib.wasm",
-        "hash": "sha256-8dAypZ4lg14dMRa8BpWv1HrFP4keVhUWEZWH62qu5tk="
+        "hash": "sha256-pvkt1FNeHOvmAqR5BxVO7daz64mQNML7lnWE+6WOk9A="
       },
       {
         "virtualPath": "System.Runtime.InteropServices.JavaScript.wasm",
         "name": "System.Runtime.InteropServices.JavaScript.wasm",
-        "hash": "sha256-S1GxM8D+khoisdSRzD8YeXKJovqw7S4xyqKQlXBd5J4="
+        "hash": "sha256-UU3NCQEhAdgDf1fpC79If2EwzBdualz0gXIwv2YEl7E="
       }
     ],
     "assembly": []
