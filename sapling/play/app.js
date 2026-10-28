@@ -1,6 +1,6 @@
 // Web UI controller; chess rules and game history come from the engine.
 
-import { eloFromSliderValue, eloLabelForSliderValue, formatEngineEval, formatMoveScore,
+import { eloFromSliderValue, eloLabelForSliderValue, formatEngineEval, formatMoveScore, formatHintScore,
   FULL_ENGINE_SLIDER_VALUE } from './ui-model.js';
 
 const INITIAL_FEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
@@ -99,9 +99,11 @@ function renderMaterial() {
     if (capture) byColor[capture.color].push(capture.type);
   }
   const opponentColor = humanColor === 'w' ? 'b' : 'w';
+  // Captured pieces sit with the capturing side (like over-the-board): Sapling's row
+  // shows pieces Sapling took (human-colored), your row shows pieces you took.
   const rows = [
-    { id: 'opponent-material', color: opponentColor, pieces: byColor[opponentColor] },
-    { id: 'you-material', color: humanColor, pieces: byColor[humanColor] },
+    { id: 'opponent-material', color: humanColor, pieces: byColor[humanColor] },
+    { id: 'you-material', color: opponentColor, pieces: byColor[opponentColor] },
   ];
   for (const row of rows) {
     const container = el(row.id);
@@ -110,7 +112,7 @@ function renderMaterial() {
       const empty = document.createElement('span');
       empty.className = 'material-empty';
       empty.textContent = '—';
-      empty.setAttribute('aria-label', 'No pieces lost');
+      empty.setAttribute('aria-label', 'No pieces captured');
       container.appendChild(empty);
       continue;
     }
@@ -176,6 +178,7 @@ function render() {
         const badge = document.createElement('span');
         badge.className = 'hint-score';
         badge.textContent = hint.label;
+        badge.title = hint.scoreType === 'mate' ? hint.label : `${(hint.lossCp / 100).toFixed(2)} pawns lost versus the best legal move`;
         cell.appendChild(badge);
       }
 
@@ -430,10 +433,6 @@ function updateHintScores(msg) {
   render();
 }
 
-function formatHintScore(score) {
-  if (score.scoreType === 'mate') return score.score > 0 ? `M${Math.abs(score.score)}` : `-M${Math.abs(score.score)}`;
-  return (score.score >= 0 ? '+' : '') + (score.score / 100).toFixed(1);
-}
 
 function toggleHintMode() {
   if (hinting || restoring) return;

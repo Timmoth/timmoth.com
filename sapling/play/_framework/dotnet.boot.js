@@ -1,7 +1,7 @@
 export const config = /*json-start*/{
   "mainAssemblyName": "Sapling.WebHost.dll",
   "resources": {
-    "hash": "sha256-TOjYvtePRHvZNYa5vSwT5UUe4aZ79irj6lKSwQUR+f4=",
+    "hash": "sha256-IbicN2SSOnb4/aVVx6HppfxsPRsrOxdpBXZNE75nV9s=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.js"
@@ -15,7 +15,7 @@ export const config = /*json-start*/{
     "wasmNative": [
       {
         "name": "dotnet.native.wasm",
-        "hash": "sha256-vWSmlUbVQsztrNsn1lWrKjZTvmrVaIxB09LfLghK4hw="
+        "hash": "sha256-4+BjNWtj29mKIekBLSDTahsjeLWQMqYlfCBJhFT6iWM="
       }
     ],
     "icu": [
@@ -39,27 +39,32 @@ export const config = /*json-start*/{
       {
         "virtualPath": "Sapling.Engine.wasm",
         "name": "Sapling.Engine.wasm",
-        "hash": "sha256-SAGBGJs1HQTLp4tpAf/qDM/oasyOaeRPWJOLjFBOn4g="
+        "hash": "sha256-mszOlGrkFbAWeu2WvhobBMtSEThUr+rpqsTwluBlrGc="
       },
       {
         "virtualPath": "Sapling.WebHost.wasm",
         "name": "Sapling.WebHost.wasm",
-        "hash": "sha256-CEGW/p2BI1zebr3CPp3OdG8giVr1tgXVcfrXh8xsuvQ="
+        "hash": "sha256-aFgSgvthiKFn9GX6VEIfmMUKT78pGG8Vmb2d42Sw0E0="
       },
       {
         "virtualPath": "System.Linq.wasm",
         "name": "System.Linq.wasm",
-        "hash": "sha256-EgXgv3Om/vcqLLI3NAYYUNv0tzQfV9AiMN+02JQFLmU="
+        "hash": "sha256-m9tnF/VNqE9ZcpqRLq1T0eyxV4AO0WaeMHUXu/OHoz0="
       },
       {
         "virtualPath": "System.Private.CoreLib.wasm",
         "name": "System.Private.CoreLib.wasm",
-        "hash": "sha256-47bJ1czdcyKe1ghC4eNnebRH6IrO6N3zNPLmpHIZLA4="
+        "hash": "sha256-EnSmr1HhZunsWBg3ro0jGalaUsSD5qXhacEIig8ET9E="
       },
       {
         "virtualPath": "System.Runtime.InteropServices.JavaScript.wasm",
         "name": "System.Runtime.InteropServices.JavaScript.wasm",
-        "hash": "sha256-S1GxM8D+khoisdSRzD8YeXKJovqw7S4xyqKQlXBd5J4="
+        "hash": "sha256-UU3NCQEhAdgDf1fpC79If2EwzBdualz0gXIwv2YEl7E="
+      },
+      {
+        "virtualPath": "System.Security.Cryptography.wasm",
+        "name": "System.Security.Cryptography.wasm",
+        "hash": "sha256-zaVR/owRcmfY2WXa/vYemet7v0j+UqH+rV6rpFDRjWM="
       }
     ],
     "assembly": []
