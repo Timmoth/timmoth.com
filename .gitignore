@@ -419,3 +419,8 @@ FodyWeavers.xsd
 *.DS_Store
 .DS_Store
 .DS_Store
+
+# site-health reports (generated locally, not part of the site)
+health-reports/
+.DS_Store
+.DS_Store

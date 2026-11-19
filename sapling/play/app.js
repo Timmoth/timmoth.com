@@ -112,6 +112,7 @@ function renderMaterial() {
       const empty = document.createElement('span');
       empty.className = 'material-empty';
       empty.textContent = '—';
+      empty.setAttribute('role', 'img');
       empty.setAttribute('aria-label', 'No pieces captured');
       container.appendChild(empty);
       continue;
@@ -152,7 +153,6 @@ function render() {
       cell.type = 'button';
       cell.className = 'sq ' + ((file + rank) % 2 === 0 ? 'dark' : 'light');
       cell.dataset.sq = String(sq);
-      cell.setAttribute('role', 'gridcell');
       cell.setAttribute('aria-label', alg(sq));
 
       if (sq === lastFrom) cell.classList.add('last', 'last-from');

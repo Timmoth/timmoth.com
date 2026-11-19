@@ -12,14 +12,14 @@
   <link rel="icon" type="image/png" href="./assets/logo.png" />
   <link rel="apple-touch-icon" href="./assets/logo.png" />
 
-  <!-- Set rel="canonical" and og:url to your deployed URL when you publish. -->
+  <link rel="canonical" href="https://timmoth.com/sapling/play/">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Sapling – Chess Engine">
   <meta property="og:description"
     content="Play Sapling, an open-source .NET chess engine, entirely in your browser via WebAssembly. Built by Tim Jones.">
-  <meta property="og:url" content="https://github.com/Timmoth/Sapling">
-  <meta property="og:image" content="./assets/sapling-banner.png">
+  <meta property="og:url" content="https://timmoth.com/sapling/play/">
+  <meta property="og:image" content="https://timmoth.com/sapling/play/assets/sapling-banner.png">
   <meta property="og:site_name" content="Sapling">
   <meta property="og:locale" content="en_GB">
 
@@ -28,7 +28,7 @@
   <meta name="twitter:title" content="Sapling – Chess Engine">
   <meta name="twitter:description"
     content="Play Sapling, an open-source .NET chess engine, entirely in your browser via WebAssembly. Built by Tim Jones.">
-  <meta name="twitter:image" content="./assets/sapling-banner.png">
+  <meta name="twitter:image" content="https://timmoth.com/sapling/play/assets/sapling-banner.png">
   <meta name="twitter:site" content="@Timmoth_j">
   <meta name="twitter:creator" content="@Timmoth_j">
 
@@ -84,7 +84,7 @@
   <main class="layout">
     <section class="board-area">
       <div class="board-wrap">
-        <div id="board" class="board" role="grid" aria-label="Chess board"></div>
+        <div id="board" class="board" role="group" aria-label="Chess board"></div>
         <div id="promotion" class="promotion" hidden></div>
       </div>
       <section class="material" aria-label="Game status and material">
@@ -95,11 +95,11 @@
           </div>
           <span id="move-count" class="move-count">0 moves</span>
         </div>
-        <div class="material-row" aria-label="Pieces captured by Sapling">
+        <div class="material-row" role="group" aria-label="Pieces captured by Sapling">
           <span id="opponent-material-label" class="material-label">Sapling</span>
           <div id="opponent-material" class="material-pieces" aria-live="polite"></div>
         </div>
-        <div class="material-row material-you" aria-label="Pieces captured by you">
+        <div class="material-row material-you" role="group" aria-label="Pieces captured by you">
           <span id="you-material-label" class="material-label">You</span>
           <div id="you-material" class="material-pieces" aria-live="polite"></div>
         </div>
@@ -118,7 +118,7 @@
           </button>
         </div>
         <div class="toolbar-settings">
-          <div class="toolbar-side" aria-label="Choose your side and board orientation">
+          <div class="toolbar-side" role="group" aria-label="Choose your side and board orientation">
             <span class="toolbar-caption">You</span>
             <div id="side" class="segmented compact-segmented" role="radiogroup" aria-label="You play">
               <button type="button" role="radio" aria-checked="true" class="pill selected" data-value="w">White</button>

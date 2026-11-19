@@ -24,9 +24,9 @@ new p5((s) => {
         // accumulate millions of unique cache entries and eventually
         // crash with "Too many properties to enumerate".
         let hue = (200 + 160 * n) | 0;
-        let alpha = 25; // subtle transparency
+        let alpha = 20; // subtle transparency
 
-        s.fill(hue % 360, 80, 100, alpha);
+        s.fill(hue % 360, 80, 70, alpha);
         s.rect(x, y, gridSize, gridSize);
       }
     }

@@ -8,7 +8,7 @@
   --secondaryText: #98989f;
   --tertiaryText: #6c6c74;
   --accent: #0a84ff;
-  --accentText: #409cff;
+  --accentText: #5aa8ff; /* lightened from #409cff: failed WCAG AA against --accentSoft chips */
   --accentSoft: rgba(10, 132, 255, 0.16);
   --separator: #38383a;
   --strongSeparator: #48484a;
@@ -302,7 +302,7 @@ body {
   pointer-events: none;
   will-change: transform;
 }
-.coord { position: absolute; font-size: 10px; color: var(--tertiaryText); pointer-events: none; }
+.coord { position: absolute; font-size: 12px; font-weight: 600; color: rgba(0, 0, 0, 0.65); pointer-events: none; } /* fixed size color sits on the light/dark squares themselves, not the theme surface, and needs to read on both */
 .coord.file { right: 3px; bottom: 2px; }
 .coord.rank { left: 3px; top: 2px; }
 
@@ -345,7 +345,7 @@ body {
   cursor: pointer;
   transition: transform 0.12s ease, opacity 0.12s ease;
 }
-.btn.primary { background: var(--accent); color: #ffffff; }
+.btn.primary { background: #0066d6; color: #ffffff; } /* darker than --accent: #0a84ff's contrast with white text fails WCAG AA at this font size */
 .btn.secondary { background: var(--accentSoft); color: var(--accentText); }
 .btn[aria-pressed="true"] { background: var(--accentSoft); color: var(--accentText); }
 .btn.hint-toggle {
@@ -421,7 +421,7 @@ body {
 
 .footer {
   padding: 16px 0 24px;
-  color: var(--tertiaryText);
+  color: var(--secondaryText); /* --tertiaryText failed WCAG AA against --canvas */
   font-size: 13px;
   text-align: center;
   display: flex;
@@ -431,7 +431,7 @@ body {
   flex-wrap: wrap;
   flex-shrink: 0;
 }
-.foot-link { color: var(--accentText); text-decoration: none; font-weight: 600; }
+.foot-link { display: inline-block; padding: 4px 2px; color: var(--accentText); text-decoration: none; font-weight: 600; }
 .foot-link:hover { text-decoration: underline; }
 .foot-link:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
 
