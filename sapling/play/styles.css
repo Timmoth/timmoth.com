@@ -187,7 +187,7 @@ body {
 .toolbar-level > span em { font-size: 10px; }
 .toolbar-level .slider { display: block; height: 18px; }
 .hint-toggle { gap: 5px; }
-.hint-toggle .hint-state { min-width: 30px; padding: 1px 4px; font-size: 10px; }
+.hint-toggle .hint-state { min-width: 30px; padding: 1px 4px; font-size: 12px; }
 
 .material {
   width: min(100%, 560px);
@@ -203,7 +203,7 @@ body {
 }
 .game-info-topline { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 10px; min-width: 0; }
 .game-info-topline .status { width: auto; height: auto; min-height: 24px; margin: 0; }
-.move-count { flex: none; padding: 3px 8px; border-radius: var(--radius-capsule); background: var(--surface-2); color: var(--secondaryText); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.move-count { flex: none; padding: 3px 8px; border-radius: var(--radius-capsule); background: var(--surface-2); color: var(--secondaryText); font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .material-row { min-width: 0; display: flex; align-items: center; gap: 10px; }
 .material-label { width: 54px; flex: none; color: var(--secondaryText); font-size: 12px; font-weight: 600; }
 .material-pieces { display: flex; align-items: center; gap: 1px; min-width: 0; min-height: 27px; overflow-x: auto; scrollbar-width: thin; }
@@ -216,7 +216,7 @@ body {
   border-radius: var(--radius-capsule);
   background: var(--surface-2);
   color: var(--secondaryText);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
@@ -518,9 +518,9 @@ body {
 
 @media (max-width: 420px) {
   .material { gap: 2px 4px; }
-  .material-label { width: 50px; font-size: 11px; }
+  .material-label { width: 54px; font-size: 12px; }
   .material-piece { width: 22px; height: 22px; }
-  .material-balance { padding: 3px 6px; font-size: 10px; }
+  .material-balance { padding: 3px 6px; font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
